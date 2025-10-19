@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chúc mừng 20/10</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ffe6f0, #fff0f5);
+      overflow: hidden;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 60px auto;
+      background-color: #ffffffcc;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(255, 192, 203, 0.4);
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      color: #d63384;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-style: italic;
+      color: #888;
+    }
+
+    .floating {
+      position: fixed;
+      top: 100%;
+      font-size: 24px;
+      animation: floatUp linear infinite;
+      opacity: 0.8;
+      z-index: 0;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.8;
+      }
+      100% {
+        transform: translateY(-120vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🌸 Chúc mừng ngày Phụ nữ Việt Nam 20/10 🌸</h1>
+    <p>Hôm nay là 20/10 – Ngày Phụ nữ Việt Nam, một ngày đặc biệt để tôn vinh những cô gái tuyệt vời như bạn.</p>
+    <p>Tôi muốn gửi đến bạn lời chúc chân thành nhất:</p>
+    <p>Chúc bạn luôn xinh đẹp, rạng rỡ, tự tin và tràn đầy năng lượng tích cực trong mỗi ngày.</p>
+    <p>Chúc bạn 8386, vạn sự như ý, triệu sự như mơ, tỷ sự bất ngờ và ngập tràn hạnh phúc.</p>
+    <p>Cảm ơn bạn vì luôn là một người dễ thương, tốt bụng và mang lại niềm vui cho mọi người xung quanh.</p>
+    <p>Mong rằng hôm nay bạn sẽ nhận được thật nhiều lời chúc, những món quà ý nghĩa, và hơn hết là cảm thấy hạnh phúc vì có rất nhiều người luôn trân trọng cậu.</p>
+    <p>Chúc bạn có một ngày 20/10 thật đáng nhớ — ngập tràn hoa, nụ cười và niềm vui.</p>
+    <div class="footer">— Với tất cả yêu thương 💖</div>
+  </div>
+
+  <!-- Floating hearts and flowers -->
+  <script>
+    const symbols = ['💖', '🌸', '💐', '🌷', '❤️', '🌹'];
+    const num = 30;
+
+    for (let i = 0; i < num; i++) {
+      const el = document.createElement('div');
+      el.className = 'floating';
+      el.style.left = Math.random() * 100 + 'vw';
+      el.style.animationDuration = 5 + Math.random() * 5 + 's';
+      el.style.fontSize = 20 + Math.random() * 20 + 'px';
+      el.innerText = symbols[Math.floor(Math.random() * symbols.length)];
+      document.body.appendChild(el);
+    }
+  </script>
+</body>
+</html>
